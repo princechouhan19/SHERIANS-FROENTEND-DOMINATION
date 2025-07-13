@@ -1,0 +1,18 @@
+/* Container with position: relative */
+#box1 {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: lightblue;
+  margin: 50px auto;
+}
+
+/* Child with position: absolute (placed inside #box1) */
+#car1 {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}

@@ -1,0 +1,52 @@
+*{
+    margin: 4px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#H{
+    height: 40%;
+    width: 100%;
+}
+
+#H h1{
+    font-size: 20vh;
+    color: burlywood;
+}
+
+#H h1::after{
+    content: " h!";
+    color: rgb(151, 112, 60);
+}
+
+#H h1::before{
+    content: "Or ";
+    color: rgb(227, 207, 179);
+}
+
+#box{
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: black;
+    color: aliceblue;
+    font-size: 70px;
+}
+
+#box::after{
+    content: " School";
+    color: rgb(183, 255, 0);
+    font-size: 70px;
+}
+
+#box::before{
+    content: "Sherians🦁 ";
+    color: rgb(255, 136, 0);
+    font-size: 70px;
+}

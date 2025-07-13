@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  background: #f4f4f4;
+}
+
+.card {
+  max-width: 500px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  position: relative;
+  margin: auto;
+}
+
+/* Pseudo-elements */
+.heading::before {
+  content: "🔥 ";
+  color: red;
+}
+
+.heading::after {
+  content: " 🚀";
+  color: green;
+}
+
+.para::first-line {
+  color: #0077cc;
+  font-weight: bold;
+}
+
+.para::first-letter {
+  font-size: 2rem;
+  color: #e91e63;
+}
+
+::selection {
+  background-color: yellow;
+  color: black;
+}
+
+/* Pseudo-classes */
+button:hover {
+  background-color: #222;
+  color: white;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.98);
+  background-color: #555;
+}
+
+input:focus {
+  border: 2px solid #0077cc;
+  outline: none;
+}
+
+/* nth-child selector */
+li:nth-child(2) {
+  color: crimson;
+  font-weight: bold;
+}

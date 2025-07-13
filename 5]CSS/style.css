@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #667eea;
+    background: -webkit-linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 2px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    grid-gap: 2rem;
+}
+
+.unit-card {
+    background: #ffffff;
+    margin: 0;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.unit-card h2 {
+    color: #4a5568;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #667eea;
+}
+
+.unit-card p {
+    color: #2d3748;
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.demo-box {
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+#px .demo-box {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border-radius: 20px;
+}
+
+#per .demo-box {
+    width: 80%;
+    height: 150px;
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    border-radius: 15px;
+}
+
+#vw-vh .demo-box {
+    width: 25vw;
+    height: 25vh;
+    background: linear-gradient(45deg, #43e97b, #38f9d7);
+    border-radius: 5vw;
+}
+
+#em .demo-box {
+    font-size: 14px;
+    width: 15em;
+    height: 15em;
+    background: linear-gradient(45deg, #fa709a, #fee140);
+    border-radius: 3em;
+}
+
+html {
+    font-size: 14px;
+}
+
+#rem .demo-box {
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(45deg, #a8edea, #fed6e3);
+    border-radius: 3rem;
+}
+
+#max .demo-box {
+    max-width: 300px;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(45deg, #d299c2, #fef9d7);
+    border-radius: 15px;
+}
+
+#min .demo-box {
+    min-width: 250px;
+    width: 50%;
+    height: 150px;
+    background: linear-gradient(45deg, #89f7fe, #66a6ff);
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .unit-card {
+        padding: 1.5rem;
+    }
+}

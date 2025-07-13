@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CSS UNITS GUIDE</h1>
+    <div class="container">
+        <div class="unit-card" id="px">
+            <h2>PX (Pixels)</h2>
+            <p>Pixels are fixed-size units that provide precise control over element dimensions. They remain constant regardless of screen size or user preferences, making them ideal for elements that need exact sizing.</p>
+            <div class="demo-box">200px × 200px</div>
+        </div>
+
+        <div class="unit-card" id="per">
+            <h2>% (Percentage)</h2>
+            <p>Percentage units are relative to the parent element's dimensions. They're essential for creating flexible layouts that adapt to their container's size.</p>
+            <div class="demo-box">80% width</div>
+        </div>
+
+        <div class="unit-card" id="vw-vh">
+            <h2>VW & VH</h2>
+            <p>Viewport Width (vw) and Viewport Height (vh) units allow precise control over element sizing relative to the browser window. 1vw = 1% of viewport width, 1vh = 1% of viewport height.</p>
+            <div class="demo-box">25vw × 25vh</div>
+        </div>
+
+        <div class="unit-card" id="em">
+            <h2>EM</h2>
+            <p>EM units are relative to the current element's font size. They cascade through nested elements, making them perfect for scalable typography and spacing that maintains proportional relationships.</p>
+            <div class="demo-box">15em × 15em</div>
+        </div>
+
+        <div class="unit-card" id="rem">
+            <h2>REM</h2>
+            <p>REM (Root EM) units are relative to the root element's font size, providing consistent sizing throughout the document. They're ideal for maintaining uniform spacing and typography across complex layouts.</p>
+            <div class="demo-box">15rem × 15rem</div>
+        </div>
+
+        <div class="unit-card" id="max">
+            <h2>MAX</h2>
+            <p>Max-width and max-height properties prevent elements from exceeding specified dimensions. They're crucial for responsive design, ensuring content remains readable and layouts don't break on larger screens.</p>
+            <div class="demo-box">max-width: 300px</div>
+        </div>
+
+        <div class="unit-card" id="min">
+            <h2>MIN</h2>
+            <p>Min-width and min-height properties ensure elements maintain minimum dimensions. They prevent content from becoming too small to read or interact with on smaller screens.</p>
+            <div class="demo-box">min-width: 250px</div>
+        </div>
+    </div>
+</body>
+</html>

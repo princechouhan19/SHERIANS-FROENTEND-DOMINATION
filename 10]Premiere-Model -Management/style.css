@@ -1,0 +1,758 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #f8f8f8;
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F8F8F8;
+    position: relative;
+    padding-top: 0.1px; /* used due to css bug */
+}
+
+#nav{
+    height: 11vh;
+    width: 100%;
+    display: flex;
+    margin-top: 35px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav h2{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-size: 1.4vw;
+    font-weight: 600;
+}
+
+#nav h2:nth-last-child(1) {
+  width: 10%;
+  border-right: none;
+}
+#nav h2:nth-last-child(2) {
+  width: 24%;
+}
+
+#nav h1{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monument;
+    padding-left: 5vw;
+    font-size: 2.6vw;
+    letter-spacing: -2px;
+    position: relative;
+}
+
+#nav h1::after{
+    content: "©";
+    font-size: 1.8vw;
+    position: absolute;
+    right: -4%;
+    top: 8px;
+    font-family: sans-serif;
+}
+
+#nav h1::before{
+    content: "model management";
+    position: absolute;
+    bottom: 5%;
+    right: 3.5%;
+    font-family: sans-serif;
+    font-size: 1vw;
+    letter-spacing: 0;
+}
+
+#center{
+    height: 90%;
+    width: 100%;
+    padding: 3.4vw 6vw;
+    position: relative;
+}
+
+#content{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay{
+    height: 52%;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    padding: 4vw;
+    color: #fff;
+}
+
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+}
+
+#over1 h1{
+    font-family: monument;
+    font-size: 3.6vw;
+}
+
+#over1 h2{
+    font-size: 2vw;
+    padding: 2vw 2.8vw;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid white;
+    padding: 1.5vw 0;
+}
+
+#over2 h4{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+#over2 img{
+    height: 3vw;
+}
+
+#scroll{
+    width: 100%;
+    height: 40vh; 
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#container{
+    height: 100%;
+    width: 110%;
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#scroll img{
+    height: 95%;
+    width: 15%;
+    object-fit: cover;
+    border-radius: 90vh;
+    margin: 1vw;
+}
+
+#scroll img:nth-child(5){
+    object-position: 0% 1%;
+}
+
+@keyframes anime{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+
+    }
+
+}
+
+#alphabet{
+    margin-top: 6vh;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    gap: 1vw;
+}
+
+#alphabet h5{
+    font-size: 1.8vw;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+    border-bottom: 2px solid #000;
+}
+
+#alphabet h6{
+    font-size: 1vw;
+    font-weight: 400;
+    font-style: italic;
+    color: grey;
+    letter-spacing: 4px;
+    padding: .5vw .7vw;
+    border: 1px solid #00000000;
+    border-radius: 50%;
+    cursor: pointer;
+    padding-left: .5vw;
+}
+
+#alphabet h6:hover{
+    border: 1px solid #000;
+    color: #000;
+}
+
+#page2{
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8vh 1.2vw;
+}
+
+#p2-left{
+    height: 100%;
+    width: 50%;
+}
+
+#img-l{
+    width: 92%;
+    height: 102%;
+    background-image: url(https://images.unsplash.com/photo-1630041605069-7b7f788747db?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90% 100%;
+}
+
+#p2-left h1{
+    font-family: monument;
+    font-size: 2.6vw;
+    padding-top: 3vh;
+}
+
+#p2-right{
+    height: 100%;
+    width: 40%;
+}
+
+#img-r{
+    width: 100%;
+    height: 76%;
+    background-image: url(model1.jpg);
+    background-size: cover ;
+    background-position: 50% 35%;
+}
+
+#p2-text{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.6vh;
+}
+
+#p2-text h2{
+    font-weight:600;
+    margin-top: 2vh;
+}
+
+#p2-text h3{
+    font-weight: 500;
+    margin-top: 2vh;
+}
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 4vw;
+}
+
+#p3-left{
+    height: 100%;
+    width: 42%;
+    margin-left: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#p3-left-top{
+    height: 88%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p3-circular{
+    width: 24vw;
+    height: 44vh;
+    background-image: url(p3-circle1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#p3-text{
+    height: 14.5vh;
+    width: 100%;
+}
+
+#p3-text h4{
+    font-size: 2vw;
+    font-weight: 600
+}
+
+#p3-right{
+    height: 100%;
+    width: 55%;
+    background-image: url(tilila-oulhaj.jpg);
+    margin-right: 6vw;
+    background-size: cover;
+}
+
+#page4{
+    height: 90vh;
+    width: 100%;
+    padding: 0vh 6vw;
+    margin-top: 10vh;
+}
+
+#p4-img{
+    height: 100%;
+    width: 100%;
+    background-image: url(page4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page5{
+    height: 100vh;
+    width: 100%;
+    padding-right: 6vw;
+    padding-left: 6vw;
+    margin-bottom: 6vh;
+}
+
+#page5>h1{
+    text-align: center;
+    font-family: monument;
+    padding: 12vh 0 8vh 0;
+    font-size: 3vw;
+}
+
+#elem{
+    height: 19.6vh;
+    width: 100%;
+    border-top: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+
+#elem:nth-last-child(1){
+    border-bottom: 2px solid #000;
+}
+
+#elem h4{
+    font-size: 1.2vw;
+    width: 6%;
+    font-weight: 500;
+}
+
+#elem2{
+    width: 50%;
+}
+
+#elem2 h1{
+    font-size: 2.8vw;
+    font-weight: 500;
+}
+
+#elem2 h5{
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+#elem img{
+    width: 10vw;
+    height: 18vh;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0;
+}
+
+#elem:hover img{
+    opacity: 1;
+}
+
+#elem:hover{
+    background-color: #ece9e9;
+}
+
+#elem img:nth-child(2){
+    object-position: 0 30%;
+}
+
+#elem img:nth-child(3){
+    object-position: 90% 90%;
+}
+
+#page6{
+    height: 100vh;
+    width: 100%;
+    padding-right: 6vw;
+    padding-left: 6vw;
+    margin-top: 20vh;
+    display: flex;
+    gap: 4vw;
+}
+
+#p6-left{
+    height: 92%;
+    width: 50%;
+    background-color: aqua;
+    background-image: url(https://www.ajc.com/resizer/v2/WP37HASI5MA3L2NFRDBRVGMKDY.jpg?auth=649a3135f37a8390c948ffe49d7bc9f3aceca6978f0b7514e7e30068cfd22fdd&height=1000&smart=true);
+    background-size: cover;
+    background-position: 50% 20%;
+}
+
+#p6-right{
+    height: 92%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#p6-right-top{
+    width: 100%;
+    height: 45%;
+}
+
+#p6-right-top h1{
+    width: 61%;
+    font-size: 5.62vh;
+    font-weight: 600;
+    font-family: monument;
+}
+
+#p6-right-top h2{
+    width: 70%;
+    padding-top: 3.7vh;
+    font-size: 3.1vh;
+    font-weight: 600;
+}
+
+#p6-right-top h3{
+    width: 100%;
+    padding-top: 3.7vh;
+    font-size: 2.18vh;
+    font-weight: 500;
+}
+
+#p6-right-bottom{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    gap: 1.4vw;
+}
+
+#rb-img1{
+    height: 100%;
+    width: 55%;
+    background-image: url(https://static1.colliderimages.com/wordpress/wp-content/uploads/2024/10/john-wick-keanu-reeves-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#rb-img2{
+    height: 100%;
+    width: 45%;
+    background-image: url(https://4kwallpapers.com/images/wallpapers/john-wick-chapter-4-1920x1200-10587.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#page7{
+    height: 90vh;
+    width: 100%;
+    padding-right: 6vw;
+    padding-left: 6vw;
+    margin-top: 4vh;
+}
+
+#p7-img{
+    height: 100%;
+    width: 100%;
+    background-image: url(p7-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page8{
+    height: 100vh;
+    width: 100%;
+    padding-right: 6vw;
+    padding-left: 6vw;
+    margin-top: 12vh;
+    display: flex;
+    gap: 4vw;
+}
+
+#p8-left{
+    width: 55%;
+    height: 98%;
+    background-image: url(p8-img1.jpg);
+    background-size: cover;
+}
+
+#p8-right{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#p8img{
+    width: 100%;
+    height: 72%;
+    background-image: url(p8-img2.png);
+    background-size: cover;
+    background-position: 0 52%;
+}
+
+#p8-text{
+    width: 100%;
+    height: 28%;
+    padding-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.2vw;
+}
+
+#p8-text h2{
+    width: 45%;
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+
+#p8-text h3{
+    width: 50%;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+#marque{
+    width: 100%;
+    margin-top: 12vh;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 1vh;
+}
+
+#marque h1{
+    display: inline-block;
+    font-size: 3vw;
+    font-weight: 900;
+    -webkit-text-stroke: 2px #000;
+    color: transparent;
+    font-family: monument;
+    letter-spacing: 5px;
+    margin-right: 16px;
+    animation-name: marque;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes marque {
+    from{
+        transform: translateX(0)
+    }
+    to{
+        transform: translateX( calc(-100% - 20px) )
+    }
+}
+
+#blog{
+    width: 100%;
+    height: 100vh;
+    padding: 13vh 6vw 20vh 6vw;
+    display: flex;
+}
+
+#blog h1{
+    width: 20%;
+    height: 100%;
+    font-family: monument;
+    font-size: 3vw;
+    font-weight: 900;
+}
+
+#blogs{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    gap: 4vw;
+}
+
+#blog1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#blog h3{
+    height: 30%;
+    font-weight: 600;
+    font-size: 1.69vw;
+}
+
+#b1-img{
+    width: 100%;
+    height: 70%;
+    background-image: url(blog1.png);
+    background-size: cover;
+    background-position: 20% 90%;
+}
+
+#blog2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#b2-img{
+    width: 100%;
+    height: 70%;
+    background-image: url(blog2.png);
+    background-size: cover;
+    background-position: 15% 90%;
+}
+
+#footer{
+    width: 100%;
+    height: 38vh;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: flex;
+    justify-content: center;
+}
+
+#footer h2{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    padding-top: 4vh;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-size: 1.4vw;
+    font-weight: 600;
+}
+
+#footer h3{
+  width: 50%;
+  height: 100%;
+}
+
+#f2 h4{
+    font-size: 1.4vw;
+    padding: 4vh 0 4vh 4vw;
+    font-weight: 600;
+    justify-content: center;
+    border-bottom: 2px solid #000;
+}
+
+#f2 h3{
+    padding-bottom: 8vh;
+}
+
+#socialmedia{
+    padding: 5vh 0 4vh 4vw;
+    gap: 1.4vw;
+    display: flex;
+    font-size: 26px;
+    color: rgb(73, 73, 73);
+}
+
+#f2 h5{
+    padding: 0 0 4vh 4vw;
+    color: rgb(73, 73, 73);
+    font-weight: 600;
+}
+#footer h1{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: monument;
+    padding-left: 6vw;
+    padding-top: 4vh;
+    font-size: 2.6vw;
+    letter-spacing: -2px;
+    position: relative;
+}
+
+#footer h1::after{
+    content: "©";
+    font-size: 1.8vw;
+    position: absolute;
+    right: -8%;
+    top: 26px;
+    font-family: sans-serif;
+}
+
+#footer h1::before{
+    content: "model management";
+    position: absolute;
+    top: 23%;
+    right: .8%;
+    font-family: sans-serif;
+    font-size: 1vw;
+    letter-spacing: 0;
+}
+
+#whitespace{
+    width: 100%;
+    height: 4vh;
+}
