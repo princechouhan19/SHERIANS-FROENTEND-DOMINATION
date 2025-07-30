@@ -1,0 +1,25 @@
+/* ACCESSING ELEMENTS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+.ImgClass{
+    height: 700px;
+    width: 750px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#ImgId{
+    height: 700px;
+    width: 750px;
+    object-fit: cover;
+    object-position: center;
+}

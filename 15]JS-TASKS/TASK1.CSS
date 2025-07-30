@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+p{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: monument;
+    color: white;
+    margin: 10vh 10vw;
+}
+
+button{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: monument;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: white;
+    margin: 10vh 10vw;
+}

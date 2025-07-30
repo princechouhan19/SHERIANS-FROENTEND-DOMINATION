@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monument;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    color: #000; 
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+textarea{
+    height: 100%;
+    width: 100%;
+    font-size: 26px;
+    font-weight: 500;
+    font-family: monument;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: white;
+    margin: 20px;
+} 
+
+input:hover{
+    background-color: rgb(229, 255, 255);
+}
+
+h3{
+    width: fit-content;
+    color: #fff;
+    padding: 20px;
+}

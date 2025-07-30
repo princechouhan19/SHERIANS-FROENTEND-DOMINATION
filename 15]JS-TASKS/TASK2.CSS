@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+button {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Monument', sans-serif;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: white;
+    margin: 10vh auto;
+    display: block;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+#img {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+img {
+    height: 100%;
+    width: 840px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20%;
+}
