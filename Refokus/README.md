@@ -16,3 +16,6 @@ A modern, responsive frontend built with React & Vue, styled via Tailwind CSS, a
 </a>
 
 <video src="public/Refokus.mp4" controls></video>
+
+**Live Project:** [https://refokus-clone-prince.netlify.app/](https://refokus-clone-prince.netlify.app/)  
+**Logo:** [![Refokus Logo](https://cdn.brandfetch.io/idZgdi6uSQ/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B)](https://refokus-clone-prince.netlify.app/)
