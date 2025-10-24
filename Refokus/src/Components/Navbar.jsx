@@ -3,7 +3,7 @@ import Button from "../Components/Button";
 
 function Navbar() {
   return (
-    <nav className="mx-auto flex max-w-screen-xl items-center justify-between py-6 border-b-[1px] border-zinc-700 fixed top-0 left-0 right-0 z-50 bg-[inherit] w-full">
+    <nav className="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-6 border border-zinc-700 fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%]  rounded-full shadow-lg backdrop-blur-md">
       <div className="nleft flex items-center">
         <img
           src="https://assets-global.website-files.com/6334198f239547d0f9cd84b3/63349803431f1562dccf1802_refokus%20logo.svg"

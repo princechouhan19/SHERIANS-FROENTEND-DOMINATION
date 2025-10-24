@@ -11,7 +11,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 const App = () => {
   const locomotiveScroll = new LocomotiveScroll();
   return (
-    <div className='w-full h-full bg-zinc-900 text-white font-satoshi'>
+    <div className='w-full h-full bg-zinc-900 text-white font-satoshi pt-24'>
       <Navbar />
       <Work />
       <Stripes />
